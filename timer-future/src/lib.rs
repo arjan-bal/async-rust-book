@@ -11,7 +11,7 @@ struct SharedState {
     waker: Option<Waker>,
 }
 
-struct TimerFuture {
+pub struct TimerFuture {
     shared_state: Arc<Mutex<SharedState>>,
 }
 
